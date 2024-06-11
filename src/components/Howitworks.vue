@@ -1,5 +1,5 @@
 <template>
-     <section class=" overflow-hidden bg-gray-100 rounded-tl-3xl rounded-br-3xl " id="about-us" >   
+     <section class=" overflow-hidden  rounded-tl-3xl rounded-br-3xl " id="about-us" >   
       <h1 class="flex justify-center text-3xl primary-color font-bold">How it works</h1> <br><br>
       <div class="flex justify-around ">
         <div class="w-1/2 p-6"><iconify-icon icon="ion:cloud-upload" class="text-6xl float-right mt-5 primary-color"  style="color: #5a6d9f"></iconify-icon> <br> </div>

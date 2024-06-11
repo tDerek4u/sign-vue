@@ -1,12 +1,12 @@
 <template>
   <!-- Features -->
-  <section class=" overflow-hidden bg-gray-100  " id="features">
-    <div class="pb-14 container mx-auto px-10">
-      <div class="px-10 py-6 bg-white rounded-3xl" data-path="0.0.2">
+  <section class=" overflow-hidden" id="features">
+    <div class="pb-14 container mx-auto ">
+      <div class="px-10 py-14  bg-white " data-path="0.0.2">
         <h1 class="flex justify-center my-4 text-3xl font-bold primary-color">
           Why Choose Us!
         </h1>
-        <div class="xl:flex lg:flex md:grid md:grid-cols-2 md:gap-3 col justify-center " data-path="0.0.2.0">
+        <div class="xl:flex lg:flex  md:grid md:grid-cols-2 md:gap-6 col justify-center " data-path="0.0.2.0">
           <div class="bg-zinc-100 rounded-2xl text-start mt-2 p-4 h-auto xl:w-1/4 lg:w-1/4 w-auto mb-2 sm:mb-0 sm:mr-2">
             <div class="flex">
               
@@ -42,7 +42,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> 
 </template>
 <script>
 export default {

@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full bg-gray-100" id="faqs">
+  <section class="w-full bg-white" id="faqs">
     <br /><br />
     <h1 class="w-full text-3xl flex justify-center font-bold text-[#5A6D9F]">FAQs</h1>
     <br />
@@ -8,7 +8,7 @@
         <ul class="flex mb-0 list-none xl:w-1/4 lg:w-1/4 md:w-1/3 w-1/2 justify-center mx-auto pt-3 pb-4">
           <li class="-mb-px last:mr-0 flex-auto text-center" v-for="tab in tabs" :key="tab.id">
             <a class="text-sm font-bold uppercase py-3 rounded shadow-lg block leading-normal cursor-pointer"
-              @click="openTab = tab.id" :class="openTab === tab.id ? 'text-white bg-primary-color' : 'text-black bg-white'
+              @click="openTab = tab.id" :class="openTab === tab.id ? 'text-white bg-primary-color' : 'text-black bg-zinc-100 shadow-lg'
                 ">
               <iconify-icon v-if="tab.icon" :icon="tab.icon" :class="tab.icon + ' mr-1 '"></iconify-icon>
               {{ tab.name }}
@@ -283,7 +283,7 @@ h1 {
 }
 
 .container-faq {
-  background-color: white;
+  background-color: #f4f4f5;
   color: black;
   border-radius: 20px;
   box-shadow: 0 5px 6px 0 rgb(0, 0, 0, 0.2);

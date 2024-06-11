@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-hidden wrapper" id="content">
+  <div class="overflow-hidden" id="content">
     <HeroSection/>
     <Features/>
     <Howitworks/>

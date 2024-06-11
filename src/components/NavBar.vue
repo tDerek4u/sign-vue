@@ -1,20 +1,21 @@
 <template>
   <div class="mb-6 w-full " data-path="0.0.0">
     <div
-      class="flex items-center w-full justify-between px-6 py-3.5 bg-gray-50 rounded-full"
+      class="flex items-center w-full justify-between px-6 py-3.5 bg-white rounded-full"
       data-path="0.0.0.0"
     >
       <div class="w-auto" data-path="0.0.0.0.0">
         <div class="flex flex-wrap items-center" data-path="0.0.0.0.0.0">
-          <div class="w-auto" data-path="0.0.0.0.0.0.0">
-            <a href="#" data-path="0.0.0.0.0.0.0.0">
+          <div class="w-auto flex" data-path="0.0.0.0.0.0.0">
+            
               <img
                 src="../assets/images/ESingNewLogo 1.png"
                 alt=""
                 data-config-id="auto-img-1-2"
                 data-path="0.0.0.0.0.0.0.0.0"
               />
-            </a>
+              <h2 class="ms-2 place-content-center text-lg tracking-wider font-semibold text-orange-400 animate__animated animate__bounce">GENI</h2>
+              <h2 class="ms-1 place-content-center text-lg tracking-wider font-semibold primary-color animate__animated animate__bounce">SIGN</h2>
           </div>
         </div>
       </div>
@@ -77,11 +78,10 @@
                 
               </div>
               <div class="w-full md:w-auto p-2">
-                <a
+                <router-link 
                   class="block w-full px-4 py-2.5 text-sm text-center text-white font-bold bg-primary-color hover:bg-slate-500 focus:ring-4 focus:ring-blue-200 rounded-full"
-                  href="#"
-                  >Get Started</a
-                >
+                  to="/login"
+                  >Get Started</router-link>
               </div>
             </div>
           </div>

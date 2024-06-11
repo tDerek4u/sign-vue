@@ -9,7 +9,7 @@
 <style>
 #app {
   font-family: Sora, sans-serif;
-
+  background: #f9fafb;
 }
 
 nav {

@@ -1,5 +1,5 @@
 <template>
-    <section class="w-full py-8 h-auto" id="footer">=
+    <section class="w-full py-8 h-auto bg-white" id="footer">=
         <div class="xl:flex lg:flex col justify-between w-full">
             <div class="xl:w-1/2 lg:w-1/2 w-full p-8 xl:flex-start lg:flex-start flex justify-center">
                     <div class="p-4">
