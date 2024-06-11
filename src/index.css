@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    font-family: "Sora", sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.primary-color{
+    color: #5A6D9F !important;
+}
+
+.secondary-color{
+    color: #F3944F;
+}
+
+.bg-primary-color{
+    background-color: #5A6D9F;
+}
+.hover\:bg-secondary-color:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(90 109 159 / var(--tw-bg-opacity));
+}
+
+.outline-primary{
+    outline-color: #5A6D9F;
+}
