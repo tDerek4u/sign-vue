@@ -4,6 +4,7 @@
     <Features/>
     <FAQ/>
     <Testimonials/>
+    <Footer/>
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import HeroSection from '@/components/HeroSection.vue'
 import Features from '@/components/Features.vue'
 import FAQ from '@/components/FAQ.vue'
 import Testimonials from '@/components/Testimonials.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'HomeView',
@@ -20,7 +22,8 @@ export default {
     HeroSection,
     Features,
     FAQ,
-    Testimonials
+    Testimonials,
+    Footer
   }
 }
 </script>

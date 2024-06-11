@@ -129,6 +129,13 @@ export default {
                     text : `I've been using this services for years, and they
                           consistently exceed my expectations. The support
                           team is fantastic!`
+                },
+                {
+                    name: 'Pepe Madrid',
+                    company : 'CEO of Something INC',
+                    text : `I've been using this services for years, and they
+                          consistently exceed my expectations. The support
+                          team is fantastic!`
                 }
             ],
         }

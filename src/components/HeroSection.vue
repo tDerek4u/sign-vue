@@ -1,6 +1,6 @@
 <template>
-  <section data-section-id="" id="home" data-share="" data-category="headers-light-reverse"
-      data-component-id="26f94a33_02_awz" data-custom-component-id=""
+  <section data-section-id="home" id="home" data-share=""  data-category="headers-light-reverse"
+      data-component-id="home" data-custom-component-id="home"
       class="pt-6  pb-20 section-content overflow-hidden relative bg-gray-100"
       data-path="0"
       >
@@ -51,7 +51,7 @@
           <div class="xl:flex lg:flex md:grid md:grid-cols-2 md:gap-3 col  p-4 justify-center " data-path="0.0.2.0">
             <div class="bg-zinc-100 rounded-2xl text-start mt-2 p-4 h-auto xl:w-1/4 lg:w-1/4 w-auto mb-2 sm:mb-0 sm:mr-2">
               <div class="flex">
-                <img src="../assets/images/lock.png" alt=""/>
+                <iconify-icon icon="teenyicons:lock-circle-solid" style="font-size: 40px;"></iconify-icon>
                 <span class="mt-2 ms-3">Unmatched Security</span>
               </div> <br>
               <p>Your documents are encrypted and stored securely.</p>
