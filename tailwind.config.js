@@ -328,9 +328,9 @@ module.exports = {
             "DEFAULT": "1"
           },
           "fontFamily": {
-            "body": "\"Satoshi\", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+            "body": "\"Sora\", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
             "heading": "\"Satoshi\", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
-            "sans": "\"Satoshi\", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+            "sans": "\"Sora\", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
             "serif": "ui-serif, Georgia, Cambria, \"Times New Roman\", Times, serif",
             "mono": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace"
           },
@@ -427,19 +427,19 @@ module.exports = {
           },
           "gridColumn": {
             "auto": "auto",
-            "span-1": "span 1 \/ span 1",
-            "span-2": "span 2 \/ span 2",
-            "span-3": "span 3 \/ span 3",
-            "span-4": "span 4 \/ span 4",
-            "span-5": "span 5 \/ span 5",
-            "span-6": "span 6 \/ span 6",
-            "span-7": "span 7 \/ span 7",
-            "span-8": "span 8 \/ span 8",
-            "span-9": "span 9 \/ span 9",
-            "span-10": "span 10 \/ span 10",
-            "span-11": "span 11 \/ span 11",
-            "span-12": "span 12 \/ span 12",
-            "span-full": "1 \/ -1"
+            "span-1": "span 1  span 1",
+            "span-2": "span 2  span 2",
+            "span-3": "span 3  span 3",
+            "span-4": "span 4  span 4",
+            "span-5": "span 5  span 5",
+            "span-6": "span 6  span 6",
+            "span-7": "span 7  span 7",
+            "span-8": "span 8  span 8",
+            "span-9": "span 9  span 9",
+            "span-10": "span 10  span 10",
+            "span-11": "span 11  span 11",
+            "span-12": "span 12  span 12",
+            "span-full": "1  -1"
           },
           "gridColumnEnd": {
             "1": "1",
@@ -475,13 +475,13 @@ module.exports = {
           },
           "gridRow": {
             "auto": "auto",
-            "span-1": "span 1 \/ span 1",
-            "span-2": "span 2 \/ span 2",
-            "span-3": "span 3 \/ span 3",
-            "span-4": "span 4 \/ span 4",
-            "span-5": "span 5 \/ span 5",
-            "span-6": "span 6 \/ span 6",
-            "span-full": "1 \/ -1"
+            "span-1": "span 1  span 1",
+            "span-2": "span 2  span 2",
+            "span-3": "span 3  span 3",
+            "span-4": "span 4  span 4",
+            "span-5": "span 5  span 5",
+            "span-6": "span 6  span 6",
+            "span-full": "1  -1"
           },
           "gridRowStart": {
             "1": "1",

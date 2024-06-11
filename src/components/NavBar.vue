@@ -1,6 +1,6 @@
 <template>
     <div class="mb-6" data-path="0.0.0">
-    <div class="flex items-center justify-between px-6 py-3.5 bg-gray-50 rounded-full" data-path="0.0.0.0">
+    <div class="flex items-center justify-between px-6 py-3.5 bg-white rounded-full" data-path="0.0.0.0">
       <div class="w-auto" data-path="0.0.0.0.0">
         <div class="flex flex-wrap items-center" data-path="0.0.0.0.0.0">
           <div class="w-auto" data-path="0.0.0.0.0.0.0">
