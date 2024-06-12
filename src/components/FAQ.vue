@@ -1,10 +1,10 @@
 <template>
   <section class="w-full bg-gray-100">
     <br /><br />
-    <h1 class="w-full text-3xl flex justify-center ms-4 font-extrabold text-[#5A6D9F]">
-      Frequently Asked Questions
+    <h1 class="w-full text-3xl flex justify-center font-bold text-[#5A6D9F]">
+      FAQs
     </h1>
-    <div class="w-full flex justify-center ms-4">
+    <div class="w-full flex justify-center ">
       <div class="wrapper-faq mt-4">
         <div class="container-faq" v-for="(faq, index) in faqs" :key="index">
           <div
@@ -19,7 +19,7 @@
             :style="{ maxHeight: faq.active ? faq.scrollHeight + 'px' : '0px' }"
             :ref="`answer-${index}`"
           >
-            <div class="answer text-start">{{ faq.answer }}<br /><br /></div>
+            <p class="answer text-start" >{{ faq.answer }}<br /><br /></p>
           </div>
         </div>
       </div>
@@ -35,29 +35,82 @@ export default {
       faqs: [
         {
           question: "How secure are my documents?",
-          answer: `Click the link in the verification email from verify@codepen.io 
-                     (be sure to check your spam folder or other email tabs if it's not in your inbox).
-                     Or, send an email with the subject "Verify" to verify@codepen.io 
-                     from the email address you use for your CodePen account.`,
-
+          answer:
+            "We use advanced encryption protocols to ensure your documents are safe and secure. All data is encrypted during transit and at rest, making it virtually impossible for unauthorized parties to access your sensitive information.",
           linkText: "How to Verify Email Docs",
           active: false,
           scrollHeight: 0,
         },
         {
           question: "How do I upload and sign a document?",
-          answer: `It's likely an infinite loop in JavaScript that we could not catch. 
-                     To fix, add ?turn_off_js=true to the end of the URL (on any page, 
-                     like the Pen or Project editor, your Profile page, or the Dashboard) 
-                     to temporarily turn off JavaScript. When you're ready to run the 
-                     JavaScript again, remove ?turn_off_js=true and refresh the page.`,
 
-          linkText: "How to Disable JavaScript Docs",
+          answer: `Uploading and signing a document is simple:\n\u2022 Upload your document in PDF format.\n\u2022 Add signature fields where needed.\n\u2022 Send the document to recipients for signing.\n\u2022 Receive the signed document back in your Google mail account.`,
+          active: false,
+          scrollHeight: 0,
+        },
+        {
+          question: "What types of documents can I sign?",
+          answer:
+            "You can sign a wide variety of documents including contracts, agreements, NDAs, invoices, and more. Our service supports PDF files, which is the standard format for digital signatures",
+          linkText: "How to Verify Email Docs",
+          active: false,
+          scrollHeight: 0,
+        },
+        {
+          question: "Can I track the status of my documents?",
+          answer:
+            "Yes, our service provides real-time tracking and status updates for your documents. You can see when a document has been viewed, signed, or sent, allowing you to stay informed throughout the entire signing process.",
+          linkText: "How to Verify Email Docs",
+          active: false,
+          scrollHeight: 0,
+        },
+        {
+          question: `How many pages can my PDF document have for signing?`,
+          answer:
+            "You can upload and sign PDF documents with up to 50 pages. This allows you to handle lengthy contracts, agreements, and other extensive documents without any issues.",
+          linkText: "How to Verify Email Docs",
+          active: false,
+          scrollHeight: 0,
+        },
+        {
+          question: "What is the maximum file size for uploading documents?",
+          answer:
+            "Our platform supports uploading PDF files up to 50 MB in size. This ensures you can upload high-quality documents without worrying about file size limitations.",
+          linkText: "How to Verify Email Docs",
+          active: false,
+          scrollHeight: 0,
+        },
+        {
+          question: "Can multiple people sign the same document?",
+          answer:
+            "Yes, our service supports multiple signers on a single document. You can easily add multiple recipients and specify the order in which they should sign, ensuring a smooth and efficient signing process for all parties involved.",
+          linkText: "How to Verify Email Docs",
+          active: false,
+          scrollHeight: 0,
+        },
+        {
+          question: "Do we need to sign our signatures again and again?",
+          answer:
+            "No, you don’t need to sign multiple times. You can add your handwritten signature by uploading it in JPEG or PNG file format, or, you can draw and save your signature in your account by using ‘Draw’ function in GENI SIGN.",
+          linkText: "How to Verify Email Docs",
+          active: false,
+          scrollHeight: 0,
+        },
+        {
+          question: "How can I set the signing area on the paper?",
+          answer:
+            "When you reach the step of preparing document after choosing recipients, you can set your signing area by dragging content blocks from right sidebar.",
+          linkText: "How to Verify Email Docs",
           active: false,
           scrollHeight: 0,
         },
       ],
     };
+  },
+  computed: {
+    formattedAnswer() {
+      return this.faq.answer.replace(/\n/g, "<br>");
+    }
   },
   methods: {
     toggleAnswer(index) {
@@ -71,6 +124,9 @@ export default {
           this.faqs[index].scrollHeight = answerElement.scrollHeight;
         }
       });
+    },
+    formattedAnswer(answer) {
+      return answer.replace(/\n/g, '<br>').replace(/\\u2022/g, '&bull;');
     },
   },
 };
@@ -114,7 +170,7 @@ h1 {
 
 .question::after {
   content: "\002B";
-  color: orange;
+  color: #5a6d9f;
   font-size: 2.2rem;
   position: absolute;
   right: 20px;

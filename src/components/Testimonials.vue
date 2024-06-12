@@ -2,7 +2,7 @@
        
     <section class="bg-gray-100" >
       <div class="w-full mx-auto max-w-xl flex flex-col justify-center py-24 relative p-8">
-        <h1 class=" text-4xl flex justify-center w-full font-extrabold text-[#5A6D9F]"><span><i class="fa-solid fa-quote-left mr-2"></i></span>Testimonials <span><i class="fa-solid fa-quote-right ml-2"></i></span></h1>
+        <h1 class=" text-3xl flex justify-center w-full font-bold text-[#5A6D9F]"><span></span>Testimonials <span></span></h1>
         <div class="mt-6 border-t pt-12 max-w-xl mx-auto">
           <!-- Starts component -->
           <div class="flex flex-col w-full" x-data="{
@@ -64,7 +64,7 @@
                   <span aria-hidden="true" class="mx-auto"> ← </span><span class="sr-only">Skip to previous slide
                     page</span>
                 </button>
-                <span class="bg-white rounded-full flex justify-center items-center font-bold w-12 h-8">{{ testimonials.length }}</span>
+                
                 <button
                   class="bg-orange-500 hover:bg-orange-500 size-8 flex focus:bg-orange-500 rounded-full items-center text-white"
                   :class="{ 'opacity-50 ': atEnd }" :aria-disabled="atEnd" :tabindex="atEnd ? -1 : 0" x-on:click="next"
@@ -124,18 +124,14 @@ export default {
         return {
             testimonials : [
                 {
-                    name: 'Pepe Madrid',
-                    company : 'CEO of Something INC',
-                    text : `I've been using this services for years, and they
-                          consistently exceed my expectations. The support
-                          team is fantastic!`
+                    name: 'Mr. Min Thu',
+                    company : 'Network Activities Group',
+                    text : `"I’ve been using the GENI Signature App for a few months now, and it’s been a game-changer! The app is incredibly user-friendly and makes signing documents a breeze. The security features give me peace of mind, knowing my documents are protected. Highly recommend!".`
                 },
                 {
-                    name: 'Pepe Madrid',
-                    company : 'CEO of Something INC',
-                    text : `I've been using this services for years, and they
-                          consistently exceed my expectations. The support
-                          team is fantastic!`
+                    name: 'Marry Roben',
+                    company : 'HR Manager',
+                    text : `"The GENI Signature App is fantastic! It’s easy to use and has streamlined our document signing process. I appreciate the robust security measures, which ensure our documents are safe and authentic. It’s a must-have tool for anyone needing reliable digital signatures."`
                 }
             ],
         }

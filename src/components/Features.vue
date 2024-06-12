@@ -1,52 +1,56 @@
 <template>
-    <!-- Features -->
-    <section class=" overflow-hidden bg-gray-100 rounded-tl-3xl rounded-br-3xl " id="features" >   
-      <h1 class="flex justify-center text-3xl text-slate-500 font-bold">How it works</h1> <br><br>
-      <div class="flex justify-around ">
-        <div class="w-1/2 p-6"><i class="fa-solid fa-cloud-arrow-up fa-flip-horizontal text-6xl float-right mt-5" style="color: #5a6d9f;"></i> <br> </div>
-        <div class="w-[3px] bg-[#5a6d9f]"></div>
-        <div class="w-1/2 p-6">
-          <p for="" class="text-2xl text-start mb-2 font-bold">1. Upload Your Documents.</p>
-          <p class="text-start font-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+  <!-- Features -->
+  <section class=" overflow-hidden bg-gray-100  " id="features">
+    <div class="pb-14 container mx-auto px-10">
+      <div class="px-10 py-6 bg-white rounded-3xl" data-path="0.0.2">
+        <h1 class="flex justify-center my-4 text-3xl font-bold primary-color">
+          Why Choose Us!
+        </h1>
+        <div class="xl:flex lg:flex md:grid md:grid-cols-2 md:gap-3 col justify-center " data-path="0.0.2.0">
+          <div class="bg-zinc-100 rounded-2xl text-start mt-2 p-4 h-auto xl:w-1/4 lg:w-1/4 w-auto mb-2 sm:mb-0 sm:mr-2">
+            <div class="flex">
+              
+              <iconify-icon icon="ph:lock-bold"  style="color: #5A6D9F; font-size: 40px;"></iconify-icon>
+              <span class="mt-2 ms-3">Unmatched Security</span>
+            </div> <br>
+            <p>Your documents are encrypted and stored securely.</p>
+          </div>
+          <div
+            class="bg-zinc-100 rounded-2xl text-start mt-2 p-4  h-auto xl:w-1/4 lg:w-1/4 w-auto mb-2 sm:mb-0 sm:mr-2">
+            <div class="flex">
+              <iconify-icon icon="ep:alarm-clock" style="color: #5A6D9F; font-size: 40px;"></iconify-icon>
+              <span class="mt-2 ms-3">Time-Saving</span>
+            </div><br>
+            <p>Sign documents instantly from anywhere.</p>
+          </div>
+          <div
+            class="bg-zinc-100 rounded-2xl text-start mt-2 p-4  h-auto xl:w-1/4 lg:w-1/4 w-auto mb-2 sm:mb-0 sm:mr-2">
+            <div class="flex">
+              <iconify-icon icon="hugeicons:legal-01" style="color: #5A6D9F; font-size: 40px;"></iconify-icon>
+              <span class="mt-2 ms-3">Legally Binding</span>
+            </div><br>
+            <p>Complies with e-signature laws worldwide.</p>
+          </div>
+          <div
+            class="bg-zinc-100 rounded-2xl text-start mt-2 p-4  h-auto xl:w-1/4 lg:w-1/4 w-auto mb-2 sm:mb-0 sm:mr-2">
+            <div class="flex">
+              <iconify-icon icon="mingcute:device-line" style="color: #5A6D9F; font-size: 40px;"></iconify-icon>
+              <span class="mt-2 ms-3">User-Friendly</span>
+            </div><br>
+            <p>Intuitive interface designed for ease of use.</p>
+          </div>
         </div>
       </div>
-      <div class="flex justify-around ">
-        <div class="w-1/2 p-6">
-          <p for="" class="text-2xl text-end mb-2 font-bold">2. Add signature fields.</p>
-          <p class="text-end font-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-        <div class="w-[3px] bg-[#5a6d9f]"></div>
-        
-        <div class="w-1/2 p-6"><i class="fa-solid fa-user-pen text-6xl float-left mt-5" style="color: #5a6d9f;"></i> <br> </div>
-      </div>
-      <div class="flex justify-around ">
-        <div class="w-1/2 p-6"><i class="fa-solid fa-user-pen text-6xl float-right mt-5" style="color: #5a6d9f;"></i> <br> </div>
-        <div class="w-[3px] bg-[#5a6d9f]"></div>
-        <div class="w-1/2 p-6">
-          <p for="" class="text-2xl text-start mb-2 font-bold">3. Send to recipients for signing.</p>
-          <p class="text-start font-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-      </div>
-      <div class="flex justify-around ">
-        <div class="w-1/2 p-6">
-          <p for="" class="text-2xl text-end mb-2 font-bold">4. Receive signed document.</p>
-          <p class="text-end font-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-        <div class="w-[3px] bg-[#5a6d9f]"></div>
-        
-        <div class="w-1/2 p-6"><i class="fa-solid fa-inbox text-6xl float-left mt-5" style="color: #5a6d9f;"></i> <br> </div>
-      </div> <br>
-    </section>
+    </div>
+  </section>
 </template>
 <script>
 export default {
-    name: 'Features',
-    props: {
-      msg: String
-    }
+  name: 'Features',
+  props: {
+    msg: String
   }
+}
 </script>
 
-  <style scoped>
-  
-  </style>
+<style scoped></style>

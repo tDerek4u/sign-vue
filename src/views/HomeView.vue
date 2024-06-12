@@ -2,6 +2,7 @@
   <div class="overflow-hidden wrapper" id="content">
     <HeroSection/>
     <Features/>
+    <Howitworks/>
     <FAQ/>
     <Testimonials/>
     <Footer/>
@@ -12,9 +13,10 @@
 // @ is an alias to /src
 import HeroSection from '@/components/HeroSection.vue'
 import Features from '@/components/Features.vue'
+import Howitworks from '@/components/Howitworks.vue' 
 import FAQ from '@/components/FAQ.vue'
 import Testimonials from '@/components/Testimonials.vue'
-import Footer from '@/components/Footer.vue'
+import Footer from '@/components/Footer.vue' 
 
 export default {
   name: 'HomeView',
@@ -23,6 +25,7 @@ export default {
     Features,
     FAQ,
     Testimonials,
+    Howitworks,
     Footer
   }
 }
