@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full bg-gray-100">
+  <section class="w-full bg-gray-100" id="faqs">
     <br /><br />
     <h1 class="w-full text-3xl flex justify-center font-bold text-[#5A6D9F]">FAQs</h1>
     <br />

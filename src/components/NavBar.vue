@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-6 w-full" data-path="0.0.0">
+  <div class="mb-6 w-full " data-path="0.0.0">
     <div
       class="flex items-center w-full justify-between px-6 py-3.5 bg-gray-50 rounded-full"
       data-path="0.0.0.0"
@@ -39,7 +39,7 @@
               </li>
               <li class="mr-9">
                 <a
-                  href=""
+                  href="#about-us"
                   class="inline-block text-sm font-bold text-gray-900 hover:text-gray-700"
                   >About Us</a
                 >
@@ -51,17 +51,17 @@
                   >FAQS</a
                 >
               </li>
-              <li>
+              <!-- <li>
                 <a
                   href=""
                   class="inline-block text-sm font-bold text-gray-900 hover:text-gray-700"
                   >Pricing</a
                 >
-              </li>
+              </li> -->
               <li>
                 <a
-                  href=""
-                  class="inline-block text-sm ms-9 font-bold text-gray-900 hover:text-gray-700"
+                  href="#footer"
+                  class="inline-block text-sm  font-bold text-gray-900 hover:text-gray-700"
                   >Contact Us</a
                 >
               </li>
@@ -147,7 +147,7 @@
                 <li class="mb-9">
                   <a
                     class="inline-block text-sm font-bold text-gray-900 hover:text-gray-700"
-                    href="home"
+                    href="#home"
                     >Home</a
                   >
                 </li>
@@ -161,7 +161,7 @@
                 <li class="mb-9">
                   <a
                     class="inline-block text-sm font-bold text-gray-900 hover:text-gray-700"
-                    href="#"
+                    href="#about-us"
                     >About Us</a
                   >
                 </li>
@@ -173,18 +173,18 @@
                     >FAQS</a
                   >
                 </li>
-                <li class="mb-9">
+                <!-- <li class="mb-9">
                   <a
                     class="inline-block text-sm font-bold text-gray-900 hover:text-gray-700"
                     href="#"
                     data-config-id="auto-txt-9-2"
                     >Pricing</a
                   >
-                </li>
+                </li> -->
                 <li class="mb-9">
                   <a
                     class="inline-block text-sm font-bold text-gray-900 hover:text-gray-700"
-                    href="#"
+                    href="#footer"
                     data-config-id="auto-txt-9-2"
                     >Contact Us</a
                   >
