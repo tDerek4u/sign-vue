@@ -5,7 +5,7 @@
     <br />
     <div class="flex flex-wrap">
       <div class="w-full">
-        <ul class="flex mb-0 list-none w-1/4 justify-center mx-auto pt-3 pb-4">
+        <ul class="flex mb-0 list-none xl:w-1/4 lg:w-1/4 md:w-1/3 w-1/2 justify-center mx-auto pt-3 pb-4">
           <li class="-mb-px last:mr-0 flex-auto text-center" v-for="tab in tabs" :key="tab.id">
             <a class="text-sm font-bold uppercase py-3 rounded shadow-lg block leading-normal cursor-pointer"
               @click="openTab = tab.id" :class="openTab === tab.id ? 'text-white bg-primary-color' : 'text-black bg-white'
