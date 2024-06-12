@@ -74,51 +74,7 @@
           <div class="w-auto hidden lg:block">
             <div class="flex flex-wrap -m-2">
               <div class="w-full md:w-auto p-2">
-                <div class="relative inline-block text-left">
-                  <div>
-                    <button
-                      type="button"
-                      class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-                      id="menu-button"
-                      aria-expanded="true"
-                      aria-haspopup="true"
-                    >
-                    <iconify-icon icon="emojione-v1:flag-for-united-states" class=" text-xl"></iconify-icon>  EN 
-                      <svg
-                        class="-mr-1 h-5 w-5 text-gray-400"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                  <div
-                    class="absolute right-0 z-10 mt-2 w-[92px] origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                    role="menu"
-                    aria-orientation="vertical"
-                    aria-labelledby="menu-button"
-                    tabindex="-1"
-                  >
-                    <div class="" role="none">
-                      
-                      <a
-                        href="#"
-                        class="gap-1 px-4 flex py-2 text-sm font-semibold text-gray-700"
-                        role="menuitem"
-                        tabindex="-1"
-                        id="menu-item-0"
-                        ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Myanmar_%281974%E2%80%932010%29.svg/2560px-Flag_of_Myanmar_%281974%E2%80%932010%29.svg.png" class="w-6 h-4 mt-0.5 rounded" alt=""> MM</a
-                      >
-                      
-                    </div>
-                  </div>
-                </div>
+                
               </div>
               <div class="w-full md:w-auto p-2">
                 <a

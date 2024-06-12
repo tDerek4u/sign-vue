@@ -10,7 +10,7 @@
 </template>
 
 <script>
-// @ is an alias to /src
+
 import HeroSection from '@/components/HeroSection.vue'
 import Features from '@/components/Features.vue'
 import Howitworks from '@/components/Howitworks.vue' 
