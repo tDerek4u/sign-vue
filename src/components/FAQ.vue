@@ -18,7 +18,7 @@
                 openTab === tab.id ? 'text-white bg-primary-color' : 'text-black bg-white'
               "
             >
-              <!-- <iconify-icon v-if="tab.icon" :icon="tab.icon" :class="tab.icon + 'absolute mr-1 '"></iconify-icon>  -->
+              <iconify-icon v-if="tab.icon" :icon="tab.icon" :class="tab.icon + ' mr-1 '"></iconify-icon> 
               {{ tab.name }}
             </a>
           </li>
@@ -105,8 +105,7 @@ export default {
         {
           id: 2,
           name: "MM",
-          imgSrc:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Myanmar_%281974%E2%80%932010%29.svg/2560px-Flag_of_Myanmar_%281974%E2%80%932010%29.svg.png",
+          icon: "cif:mm",
         },
       ],
       faqs_en: [
