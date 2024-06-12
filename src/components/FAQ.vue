@@ -6,19 +6,11 @@
     <div class="flex flex-wrap">
       <div class="w-full">
         <ul class="flex mb-0 list-none w-1/4 justify-center mx-auto pt-3 pb-4">
-          <li
-            class="-mb-px last:mr-0 flex-auto text-center"
-            v-for="tab in tabs"
-            :key="tab.id"
-          >
-            <a
-              class="text-sm font-bold uppercase py-3 rounded shadow-lg block leading-normal cursor-pointer"
-              @click="openTab = tab.id"
-              :class="
-                openTab === tab.id ? 'text-white bg-primary-color' : 'text-black bg-white'
-              "
-            >
-              <iconify-icon v-if="tab.icon" :icon="tab.icon" :class="tab.icon + ' mr-1 '"></iconify-icon> 
+          <li class="-mb-px last:mr-0 flex-auto text-center" v-for="tab in tabs" :key="tab.id">
+            <a class="text-sm font-bold uppercase py-3 rounded shadow-lg block leading-normal cursor-pointer"
+              @click="openTab = tab.id" :class="openTab === tab.id ? 'text-white bg-primary-color' : 'text-black bg-white'
+                ">
+              <iconify-icon v-if="tab.icon" :icon="tab.icon" :class="tab.icon + ' mr-1 '"></iconify-icon>
               {{ tab.name }}
             </a>
           </li>
@@ -31,26 +23,14 @@
               <div v-show="openTab === 1">
                 <div class="w-full flex justify-center">
                   <div class="wrapper-faq mt-4">
-                    <div
-                      class="container-faq"
-                      v-for="(faq, index) in faqs_en"
-                      :key="`en-${index}`"
-                    >
-                      <div
-                        class="question"
-                        :class="{ active: faq.active }"
-                        @click="toggleAnswer(index, 'en')"
-                      >
+                    <div class="container-faq" v-for="(faq, index) in faqs_en" :key="`en-${index}`">
+                      <div class="question" :class="{ active: faq.active }" @click="toggleAnswer(index, 'en')">
                         {{ faq.question }}
                       </div>
-                      <div
-                        class="answercont"
-                        :style="{
-                          maxHeight: faq.active ? faq.scrollHeight + 'px' : '0px',
-                        }"
-                        :ref="`answer-en-${index}`"
-                      >
-                        <p class="answer text-start">{{ faq.answer }}<br /><br /></p>
+                      <div class="answercont" :style="{
+                        maxHeight: faq.active ? faq.scrollHeight + 'px' : '0px',
+                      }" :ref="`answer-en-${index}`">
+                        <p class="answer text-start" v-html="faq.answer"></p>
                       </div>
                     </div>
                   </div>
@@ -61,26 +41,14 @@
               <div v-show="openTab === 2">
                 <div class="w-full flex justify-center">
                   <div class="wrapper-faq mt-4">
-                    <div
-                      class="container-faq"
-                      v-for="(faq, index) in faqs_mm"
-                      :key="`mm-${index}`"
-                    >
-                      <div
-                        class="question"
-                        :class="{ active: faq.active }"
-                        @click="toggleAnswer(index, 'mm')"
-                      >
+                    <div class="container-faq" v-for="(faq, index) in faqs_mm" :key="`mm-${index}`">
+                      <div class="question" :class="{ active: faq.active }" @click="toggleAnswer(index, 'mm')">
                         {{ faq.question }}
                       </div>
-                      <div
-                        class="answercont"
-                        :style="{
-                          maxHeight: faq.active ? faq.scrollHeight + 'px' : '0px',
-                        }"
-                        :ref="`answer-mm-${index}`"
-                      >
-                        <p class="answer text-start">{{ faq.answer }}<br /><br /></p>
+                      <div class="answercont" :style="{
+                        maxHeight: faq.active ? faq.scrollHeight + 'px' : '0px',
+                      }" :ref="`answer-mm-${index}`">
+                        <p class="answer text-start" v-html="faq.answer"></p>
                       </div>
                     </div>
                   </div>
@@ -120,7 +88,14 @@ export default {
         {
           question: "How do I upload and sign a document?",
 
-          answer: `Uploading and signing a document is simple:\n\u2022 Upload your document in PDF format.\n\u2022 Add signature fields where needed.\n\u2022 Send the document to recipients for signing.\n\u2022 Receive the signed document back in your Google mail account.`,
+          answer: `Uploading and signing a document is simple: 
+                  <ul>
+                    
+                    <li>1. Upload your document in PDF format.</li>
+                    <li>2. Add signature fields where needed.</li>
+                    <li>3. Send the document to recipients for signing.</li>
+                    <li>4. Receive the signed document back in your Google mail account.</li>
+                  </ul>`,
           active: false,
           scrollHeight: 0,
         },
@@ -193,10 +168,12 @@ export default {
         {
           question: "စာရွက်စာတမ်းတစ်ခုကို လက်မှတ်ထိုးမယ်ဆို ဘာကစလုပ်ရမလဲ",
           answer: `စာရွက်စာတမ်းတင်ပြီး လက်မှတ်ထိုးရတဲ့ လုပ်ငန်းစဉ်ကလွယ်ကူပါတယ်
-					\n\u2022 အရင်ဆုံးလက်မှတ်ထိုးမည့် စာရွက်စာတမ်းကို pdf format နဲ့ တင်ရပါမယ်
-					\n\u2022 စာရွက်ပေါ်မှာ လက်မှတ်ရေးထိုးမည့်နေရာတွေကို သတ်မှတ်ပေးရပါမယ်
-					\n\u2022 လက်မှတ်ထိုးမည့် သက်ဆိုင်တဲ့သူတွေဆီ ပေးပို့ပါ
-					\n\u2022 လက်မှတ်ထိုးပြီးသား စာရွက်စာတမ်းတွေကို လူကြီးမင်းတို့ရဲ့ google mail account ထဲမှာ ပြန်လည်ရရှိမှာဖြစ်ပါတယ်`,
+                    <ul>
+                      <li>၁။ အရင်ဆုံးလက်မှတ်ထိုးမည့် စာရွက်စာတမ်းကို pdf format နဲ့ တင်ရပါမယ်</li>
+                      <li>၂။ စာရွက်ပေါ်မှာ လက်မှတ်ရေးထိုးမည့်နေရာတွေကို သတ်မှတ်ပေးရပါမယ်</li>
+                      <li>၃။ လက်မှတ်ထိုးမည့် သက်ဆိုင်တဲ့သူတွေဆီ ပေးပို့ပါ</li>
+                      <li>၄။ လက်မှတ်ထိုးပြီးသား စာရွက်စာတမ်းတွေကို လူကြီးမင်းတို့ရဲ့ google mail account ထဲမှာ ပြန်လည်ရရှိမှာဖြစ်ပါတယ်</li>
+                    </ul>`,
           linkText: "How to Verify Email Docs",
           active: false,
           scrollHeight: 0,
@@ -264,7 +241,7 @@ export default {
   methods: {
     toggleAnswer(index, language) {
       let faqArray = this.faqs_en;
-      if (language === "mm") {
+      if (language === 'mm') {
         faqArray = this.faqs_mm;
       }
       console.log(index);
