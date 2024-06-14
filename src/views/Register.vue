@@ -144,13 +144,13 @@
                                                 <div class="paper"></div>
                                             </div>
                                         </div>
-                                        <p class="mx-auto w-full text-center ml-[-10px]">Register</p>
+                                        <p class="mx-auto w-full text-center ml-[-15px]">Register</p>
                                     </button>
                                 </div>
                             </form>
                             <div
                                 class="flex justify-between sm:flex sm:flex-wrap gap-y-6  mt-6 text-gray-500 text-sm">
-                                <p class="font-medium">Already have an account? <a class="text-blue-600 cursor-pointer">Sign In</a></p>
+                                <p class="font-medium">Already have an account? <router-link to="/login" class="text-blue-600 cursor-pointer">Sign In</router-link></p>
                             </div>
 
 

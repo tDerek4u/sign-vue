@@ -79,7 +79,7 @@
                                                 <div class="paper"></div>
                                             </div>
                                         </div>
-                                        <p class="mx-auto w-full text-center ml-[-10px]">Login</p>
+                                        <p class="mx-auto w-full text-center ml-[-15px]">Login</p>
                                     </button>
                                 </div>
                             </form>
