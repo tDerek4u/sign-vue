@@ -1,8 +1,8 @@
 <template>
   <!-- Features -->
   <section class=" overflow-hidden" id="features">
-    <div class="pb-14 container mx-auto ">
-      <div class="px-10 py-14  bg-white " data-path="0.0.2">
+    <div class="pb-14 container mx-auto px-10  ">
+      <div class="px-10 py-14  bg-white rounded-3xl " data-path="0.0.2">
         <h1 class="flex justify-center my-4 text-3xl font-bold primary-color">
           Why Choose Us!
         </h1>
