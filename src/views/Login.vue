@@ -95,7 +95,7 @@
                     <div class="button__icon">
                       <img src="../assets/images/otherlogin.png" class="mr-[-3px] mt-[-2px] p-1" alt="">
                     </div>
-                    <span class="button__text w-full text-sm">Login with GENI</span>
+                    <span class="button__text w-full text-sm text-center mr-2">Login with GENI</span>
                   </div>
                 </button>
               </div>
@@ -347,7 +347,7 @@
 }
 
 .button__icon {
-  width: 48px;
+  width: 60px;
   height: 44px;
   background-color: white;
   display: grid;
@@ -362,7 +362,6 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  max-width: 180px;
 }
 
 .button:hover .button__text {
