@@ -1,10 +1,10 @@
 <template>
   <div class="w-full" style="height: 100vh">
     <div class="flex sm:w-full md:h-full h-full">
-      <div class="w-1/2 xl:block lg:block md:hidden hidden">
+      <div class="w-1/2 xl:block lg:block bg-zinc-200 md:hidden hidden">
         <img src="../assets/images/login_picture-03.png" class="" style="height: 100vh" alt="login" />
       </div>
-      <div class="xl:w-1/2 lg:w-1/2 w-full bg-zinc-100 h-full">
+      <div class="xl:w-1/2 lg:w-1/2 w-full bg-zinc-200 h-full">
         <div class="flex justify-center items-center h-full">
           <div class="flex min-h-full w-full flex-col justify-center py-auto px-10 md:px-20 lg:px-20 xl:px-30">
             <div class="sm:mx-auto sm:w-full sm:max-w-sm">
