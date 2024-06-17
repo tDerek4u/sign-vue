@@ -89,7 +89,7 @@
               <div class="w-full text-center">
                 <br />
                 <!-- <span class="mt-2 text-slate-500">-- other login --</span>  -->
-                <button class="button w-full border" style="--clr: #00ad54">
+                <a href="#" class="button w-full border text-center" style="--clr: #00ad54">
                   <span class="button-decor"></span>
                   <div class="button-content">
                     <div class="button__icon">
@@ -97,7 +97,9 @@
                     </div>
                     <span class="button__text w-full text-sm text-center mr-2">Login with GENI</span>
                   </div>
-                </button>
+                </a>
+
+
               </div>
             </div>
           </div>
@@ -327,6 +329,7 @@
   color: white;
   border: none;
   cursor: pointer;
+  display: inline-flex;
 }
 
 .button-decor {
@@ -371,4 +374,5 @@
 .button:hover .button-decor {
   transform: translate(0);
 }
+
 </style>
