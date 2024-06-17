@@ -68,7 +68,7 @@
                         <div class="paper"></div>
                       </div>
                     </div>
-                    <p class="mx-auto w-full text-center ml-[-15px]">Login</p>
+                    <p class="mx-auto w-full text-center text-sm text-white ml-[-15px]">Login</p>
                   </button>
                 </div>
               </form>
@@ -330,6 +330,7 @@
   border: none;
   cursor: pointer;
   display: inline-flex;
+  
 }
 
 .button-decor {
@@ -345,6 +346,7 @@
   display: flex;
   align-items: center;
   font-weight: 600;
+  width: inherit;
   position: relative;
   overflow: hidden;
 }
